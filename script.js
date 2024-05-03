@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide", {
+    type: "slide",
+    rewind: true,
+    autoplay: true,
+    interval: 2000,
+    pauseOnHover: false,
+  });
+
+  splide.mount();
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   // Product information data
   var productData = {
     name: "Tam An Herbal Pharma",
@@ -22,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Populate product information
+
   var productInfoSection = document.getElementById("product-info");
   productInfoSection.innerHTML = `
         <h2>${productData.name}</h2>

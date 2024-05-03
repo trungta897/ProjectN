@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     type: "slide",
     rewind: true,
     autoplay: true,
-    interval: 2000,
+    interval: 10000,
     pauseOnHover: false,
   });
 

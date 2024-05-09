@@ -20,38 +20,29 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
 <body>
-    <header class="container">
-        <h1 class="text-center">Product Introduction</h1>
-        <a href="Main.html"><img class="img-logo" src="/images/logo.png" alt="Ích não Tâm An"></a>
-
-        <div class="menu">
-            <div class="row">
-                <ul class="navbar col">
-                    <li><a href="Main.html">Trang chủ</a></li>
-                    <li><a href="MuaHang.html">Mua hàng</a></li>
-                    <li><a href="cskh.html">Chăm sóc khách hàng</a></li>
+    <header>
+        <h1>Product Introduction</h1>
+        <nav class="container">
+            <a class="navbar" href=""><img class="img-logo" src="Screenshot 2024-05-02 190159.png"
+                    alt="Ích não Tâm An"></a>
+            <div class="container-fluid">
+                <ul class="nav col list-unstyled"><span class="text-center">
+                        <li><a href="#trangchu">Trang Chủ</a></li>
+                        <li><a href="#muaban">Mua bán</a></li>
+                    </span>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
+
     <main>
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-        <div class="splide">
-            <div class="splide__track">
-                <ul class="splide__list">
-                    <li class="splide__slide">dsjfalhdsakfj</li>
-                    <li class="splide__slide">adsfjhsakfh</li>
-                    <li class="splide__slide">ạdhfsklahfdskahf</li>
-                </ul>
-            </div>
-        </div>
         <section id="product-info">
             <!-- Product information will be displayed here -->
+
         </section>
     </main>
     <script src="script.js"></script>
@@ -62,7 +53,54 @@
             <div class="col-12 text-center section-sm">
                 <img src="Screenshot 2024-05-02 190159.png" class="img-logo-footer" alt="Ích não Tâm An"></a>
             </div>
+            <div class="buy" id="#muaHang">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2>Mua hàng</h2>
+                        </div>
+                        <div class="col">
+                            <h3 class="mb-4">Mua hàng ngay</h3>
+                            <form action="nguyentatrunghieu2@gmail.com" method="post" data-netlify-recaptcha="true"
+                                name="Muahang">
+                                <input type="hidden" name="form-name" value="Muahang">
+                                <input type="text" class="form-control mb-2" id="name" name="name"
+                                    placeholder="Họ và tên" required>
+                                <input type="email" class="form-control mb-2" id="email" name="email"
+                                    placeholder="Email (Không bắt buộc)">
+                                <input type="number" class="form-control mb-2" id="phone-number" name="phone-number"
+                                    placeholder="Số điện thoại" required>
 
+                                <div class="row">
+                                    <div class="col-sm-3 col-12">
+                                        <h6 style="font-weight: 600;">Sản phẩm</h6>
+                                        <fieldset disabled>
+                                            <input type="text" class="form-control mb-2" id="sanPham1" name="sanPham1"
+                                                placeholder="Ích não tâm an">
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-sm-3 col-6">
+                                        <h6 style="font-weight: 600;">Số lượng</h6>
+                                        <input type="number" name="soLuong" id="soLuong" class="form-control mb-2"
+                                            required>
+                                    </div>
+
+                                    <div class="col-sm-3 col-6">
+                                        <h6 style="font-weight: 600;">Giá sản phẩm</h6>
+                                        <h5>100.000 đ</h5>
+                                    </div>
+
+                                    <div class="col-sm-3 col-12">
+                                        <h6 style="font-weight: 600;">Thành tiền</h6>
+                                        <h5 id="thanhTien">0 đ</h5>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <h5 class="font-weight-medium mb-4">Ích não Tâm An</h5>
                 <ul class="list-unstyled">
@@ -96,7 +134,6 @@
                     </li>
                 </ul>
             </div>
-
 </footer>
 
 </html>
